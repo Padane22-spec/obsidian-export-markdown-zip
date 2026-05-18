@@ -94,5 +94,7 @@ npm test
 ## Notes
 
 - Desktop only. `manifest.json` marks the plugin as desktop-only.
+- Vault read access is used only during export. The plugin reads the selected Markdown file, Markdown files reachable through local Obsidian or Markdown links, and local attachments included in that export graph.
+- Files outside the reachable export graph are not read or included.
 - Unresolved local links are left unchanged and counted in the export result.
 - External URLs are preserved unchanged.
